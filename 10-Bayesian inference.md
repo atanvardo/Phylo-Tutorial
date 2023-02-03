@@ -45,3 +45,8 @@ $$
 R = \frac{P(D|H_{new})}{P(D|H_{former})}
 $$
 
+The ratio between the Bayesian probabilities of both trees is simply the ratio between their likelihoods! So, in the end, doing a Bayesian Inference analysis is equivalent to doing a bit more sophisticated Maximum Likelihood analysis.
+
+If $R > 1$, we discard the former tree, and start walking from the new tree. If $R < 1$, we go back to the former tree and try to find another path.
+
+
