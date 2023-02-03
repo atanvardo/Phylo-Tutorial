@@ -24,3 +24,16 @@ If we plot the number of observed differences between two sequences (d) against 
 
 In orange, we see the expected line (differences = distance), but in blue we can see the real line. Two extremely distant and unrelated sequences will not usually differ more than a 75%. This has also some logic: if we create two nucleotide sequences by pressing the A, C, G and T keys randomly, 25% of their nucleotides will be identical, just by simple probability.
 
+## Nucleotide substitution models: the basics
+
+In order to deal with this problem, the nucleotide substitution models were created.
+
+The models have a series of parameters:
+
+-	On one hand, we have a **substitution matrix** that define the substitution rates from one nucleotide to another. It has four rows and four columns, representing the four nucleotides in alphabetical order (A, C, G, T). For example, the element in the second row, third column, represents the rate of change from C to G.
+-	On the other hand, we have a **frequency matrix** that represents the frequency of each nucleotide in our dataset. 
+
+The most simple model is the one proposed by Jukes and Cantor in 1969 (**Jukes&Cantor, JC**). It considers that the substitution rates are identical for every nucleotide, as well as their frequencies:
+
+$P_{i}
+
