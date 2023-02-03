@@ -9,3 +9,6 @@ These distances can be calculated using different indices. One of the simpler an
 $$
 J(A,B) = \frac{|A \bigcap B|}{|A \bigcup B|}
 $$
+
+The algorithm starts taking the two taxa with the least distance, draw them in the tree, and replace them in the matrix by a mixed new taxon. The process is repeated until all the taxa are drawn in the tree. A detailed explanation, step by step, can be found in http://www.southampton.ac.uk/~re1u06/teaching/upgma/
+
