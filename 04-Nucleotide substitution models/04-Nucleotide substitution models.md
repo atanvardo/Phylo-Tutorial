@@ -97,3 +97,25 @@ f =
 \end{bmatrix}
 $$
 
+## General Time Reversible
+
+Ultimately, models can be as complicated as we want, adding more parameters (for example, as Kimura did) and/or considering different frequencies for the nucleotides (as Felsenstein did).
+
+The most complex of the traditional models is the **Generalised Time-Reversible model (GTR)**, proposed by Tavaré in 1986, in which we have different nucleotide frequences and different substitution rates for each pair of nucleotides:
+
+$$
+P_{i} = 
+\begin{bmatrix}
+  . & \pi_{C}\alpha & \pi_{G}\beta & \pi_{T}\gamma \\
+  \pi_{A}\alpha & . & \pi_{G}\delta & \pi_{T}\epsilon \\
+  \pi_{A}\beta & \pi_{C}\delta & . & \pi_{T}\theta \\
+  \pi_{A}\gamma & \pi_{C}\epsilon & \pi_{G}\theta & . \\
+\end{bmatrix}
+$$
+
+$$
+f = 
+\begin{bmatrix}
+  \pi_{A} & \pi_{C} & \pi_{G} & \pi_{T} \\
+\end{bmatrix}
+$$
