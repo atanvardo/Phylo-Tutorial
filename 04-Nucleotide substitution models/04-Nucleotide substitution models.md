@@ -41,6 +41,6 @@ $$P_{i} =
   \alpha & . & \alpha & \alpha \\
   \alpha & \alpha & . & \alpha \\
   \alpha & \alpha & \alpha & . \\
- \end{matrix}
+ \end{bmatrix}
 $$
 
