@@ -16,5 +16,9 @@ It is a **posterior** probability calculation, while likelihood is anterior prob
 The meaning of the components of the Bayes equation for phylogenetic analyses is:
 
 -	$P(D|H)$: It is simply the tree likelihood. We already know how to calculate it (just using the Maximum Likelihood algorithm).
--	$P(H)$: It is the probability of getting a particular tree randomly from all the possible trees. It is usually considered to be equal to $\frac{1}{N_{trees}}$, but some experts have some doubts about it.
--	$P(D)$: It is the probability of our matrix, i.e. that for each position for each of the taxa we find those particular nucleotide instead of another. This value is absolutely impossible to calculate. In order to be able to carry out this analysis, we should use a smart trick to remove this element from the equation. We will learn how to do it in the next section.
+-	$P(H)$: It is the probability of getting a particular tree randomly when sampling all the possible trees. It is usually considered to be equal to $\frac{1}{N_{trees}}$, but some experts have some doubts about it.
+-	$P(D)$: It is the probability of our matrix, i.e. that for each position in the sequence of each of the taxa we can find those particular nucleotide instead of another. This value is absolutely impossible to calculate. In order to be able to carry out this analysis, we should use a smart trick to remove this element from the equation. We will learn how to do it in the next section.
+
+## Bayesian Inference algorithm
+
+This method uses a **Markov chain Monte Carlo** algorithm. This procedure is equivalent to “have a walk” around a multidimensional space conformed by all the possible trees. It starts in a random place and looks which tree is at that position ( $T_{former}$ ). Then it takes a step, moving to a close place (by modifying a bit any of the parameters of the tree) and look at the tree that is there ( $T_{new}$ ). And then it calculates the ratio between the Bayesian probabilities of both trees:
