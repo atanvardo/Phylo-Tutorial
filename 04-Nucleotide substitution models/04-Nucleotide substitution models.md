@@ -18,3 +18,9 @@ For example, if we have an `A` in one sequence and a `C` in the other sequence, 
 
 Additionally, we can have cases in which the same nucleotide in both sequences (**0 observed differences**) come from identical changes from a different ancestral nucleotide (**2 changes**). Or many other different cases...
 
+If we plot the number of observed differences between two sequences (d) against the real evolutionary distance between them (t) we observe this graph: 
+
+![Graph](04-nucleotides.png)
+
+In orange, we see the expected line (differences = distance), but in blue we can see the real line. Two extremely distant and unrelated sequences will not usually differ more than a 75%. This has also some logic: if we create two nucleotide sequences by pressing the A, C, G and T keys randomly, 25% of their nucleotides will be identical, just by simple probability.
+
