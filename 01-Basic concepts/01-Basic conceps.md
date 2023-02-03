@@ -6,3 +6,5 @@ The nodes can be **terminal** (corresponding to the taxa that we are studying) o
 
 Trees can be **rooted** or **unrooted**. An unrooted tree just shows the relationships between the taxa and the distance between them, but it can’t determine which ones are in more **basal** or derived positions.
 
+![Trees](01-Tree_rooted_vs_unrooted.png)
+
