@@ -35,5 +35,5 @@ The models have a series of parameters:
 
 The most simple model is the one proposed by Jukes and Cantor in 1969 (**Jukes&Cantor, JC**). It considers that the substitution rates are identical for every nucleotide, as well as their frequencies:
 
-$P_{i}
+$P_{i}$
 
