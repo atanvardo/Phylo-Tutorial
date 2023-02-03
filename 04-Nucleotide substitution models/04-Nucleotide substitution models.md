@@ -31,11 +31,14 @@ In order to deal with this problem, the nucleotide substitution models were crea
 The models have a series of parameters:
 
 -	On one hand, we have a **substitution matrix** that define the substitution rates from one nucleotide to another. It has four rows and four columns, representing the four nucleotides in alphabetical order (A, C, G, T). For example, the element in the second row, third column, represents the rate of change from C to G.
--	On the other hand, we have a **frequency matrix** that represents the frequency of each nucleotide in our dataset. 
+-	On the other hand, we have a **frequency matrix** that represents the frequency of each nucleotide in our dataset.
+
+## Jukes and Cantor
 
 The most simple model is the one proposed by Jukes and Cantor in 1969 (**Jukes&Cantor, JC**). It considers that the substitution rates are identical for every nucleotide, as well as their frequencies:
 
-$$P_{i} = 
+$$
+P_{i} = 
 \begin{bmatrix}
   . & \alpha & \alpha & \alpha \\
   \alpha & . & \alpha & \alpha \\
@@ -48,6 +51,49 @@ $$
 f = 
 \begin{bmatrix}
   \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} \\
+\end{bmatrix}
+$$
+
+## Kimura with 2 parameters
+
+Later, Kimura proposed an alternative (**Kimura-2-parameter, K80, K2P**) in which the transition rates (substitutions between nucleotides of the same type, A to G, or C to T) are different to the transversion rates (substitutions between nucleotides of different type): 
+
+
+$$
+P_{i} = 
+\begin{bmatrix}
+  . & \beta & \alpha & \beta \\
+  \beta & . & \beta & \alpha \\
+  \alpha & \beta & . & \beta \\
+  \beta & \alpha & \beta & . \\
+\end{bmatrix}
+$$
+
+$$
+f = 
+\begin{bmatrix}
+  \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} \\
+\end{bmatrix}
+$$
+
+## Felsenstein
+
+Felsenstein, on other hand, proposed an alternative (**F81**) in which the nucleotide frequencies change, instead of having different rates for transitions vs transversions. Be aware that changing the nucleotide frequences also affects the substitution matrix!
+
+$$
+P_{i} = 
+\begin{bmatrix}
+  . & \pi_{C} * \alpha & \pi_{G} * \alpha & \pi_{T} * \alpha \\
+  \pi_{A} * \alpha & . & \pi_{G} * \alpha & \pi_{T} * \alpha \\
+  \pi_{A} * \alpha & \pi_{C} * \alpha & . & \pi_{T} * \alpha \\
+  \pi_{A} * \alpha & \pi_{C} * \alpha & \pi_{G} * \alpha & . \\
+\end{bmatrix}
+$$
+
+$$
+f = 
+\begin{bmatrix}
+  \pi_{A} & \pi_{C} & \pi_{G} & \pi_{T} \\
 \end{bmatrix}
 $$
 
