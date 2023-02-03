@@ -50,6 +50,18 @@ As it is not possible to build a computer bigger than the Universe, we must use 
 - **Heuristic search**: There are different approaches for this algorithm.
   - **Stepwise addition** is identical to branch and bound, but it only keeps the shortest tree in each iteration.
   - **Star decomposition** is more complex, because in each step it collapses the tree and performs a series of complex operations as it “unfolds” the tree. At the same time, it rearranges the tree in each step and calculates the new length, sometimes finding shorter trees that it may have overlooked in previous steps.
-  * There are different rearrangement (or **branch-swapping**) algorithms; the most common is tree bisection and reconnection (**TBR**). This is the fastest tree search algorithm, but it does not guarantee finding the shortest tree, even using branch-swapping methods.
+  - There are different rearrangement (or **branch-swapping**) algorithms; the most common is tree bisection and reconnection (**TBR**). This is the fastest tree search algorithm, but it does not guarantee finding the shortest tree, even using branch-swapping methods.
+
+## Consensus tree
+
+When an analysis (not only Maximum Parsimony, but also Bayesian Inference or any other kind) produces a series of trees as a result, we must create a consensus tree. This may happen in a Maximum Parsimony search finds that, instead of a minimum-length tree, we have more than one tree that share the same minimum length.
+
+There are several methods for creating the consensus tree. Some of the most common are:
+
+-	**Strict**: The consensus tree only shows the nodes that are present in all the trees.
+-	**Majority Rule**: The consensus tree only shows the nodes that are present in a predefined percentage of the trees.
+
+
+
 
 [^1]: As Ian Malcolm (Jeff Golfblum) said in Jurassic Park, “life finds a way”.
