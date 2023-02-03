@@ -41,9 +41,10 @@ We can find different kinds of clades, or groups of organisms:
 
 Two clades are sister clades if the descent from a common ancestor, forming a monophyletic clade together. We can distinguish them on trees as the two descendants from an internal node. For example: humans and chimpanzees, in the tree above.
 
-Usually, nodes bifurcate in two clades (**dichotomy**) [^1]. Sometimes, we can find three (**tritomy**) or more (**polytomy**) clades originating from a single node. This is an artefact that generates when the algorithm used to reconstruct the tree could not decide which is the relationship between these clades. Maybe our sequences are too few, or their quality is not optimal, or they are identical. They can also be generated when we generate consensus trees. Polytomies are normal and can be published, unless they are very exaggerated .
+Usually, nodes bifurcate in two clades (**dichotomy**)[^1]. Sometimes, we can find three (**tritomy**) or more (**polytomy**) clades originating from a single node. This is an artefact that generates when the algorithm used to reconstruct the tree could not decide which is the relationship between these clades. Maybe our sequences are too few, or their quality is not optimal, or they are identical. They can also be generated when we generate consensus trees. Polytomies are normal and can be published, unless they are very exaggerated[^2].
 
 
 
 [^1]: Warning! Each internal node has THREE branches: two connecting to their “children” clades, and one that connects it to the rest of the tree. Never forget this last branch, which is usually overseen if we are working with rooted trees.
 
+[^2]: Never show in front of an audience a polytomy composed of many clades (haircomb tree or fishbone tree)
