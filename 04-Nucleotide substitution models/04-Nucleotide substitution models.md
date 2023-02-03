@@ -42,7 +42,8 @@ $$P_{i} =
   \alpha & \alpha & . & \alpha \\
   \alpha & \alpha & \alpha & . \\
 \end{bmatrix}
-
+$$
+$$
 f = 
 \begin{bmatrix}
   \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} \\
