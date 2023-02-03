@@ -26,7 +26,7 @@ Files in PHYLIP format usually have the extension phy.
 
 ## FASTA format
 
-This format was developed by Lipman and Pearson in 1985. It is a simple text format that stores a collection of sequences. It does not require that the sequences are aligned, have the same length, or even have any relationship between them, so it is used as a "storage". Each piece of data includes two lines: in the first line we write the name preceded by the character “>”, and in the second line we include the sequence:
+This format was developed by Lipman and Pearson in 1985. It is a simple text format that stores a collection of sequences. It does not require that the sequences are aligned, have the same length, or even have any relationship between them, so it is used as a "storage". Each piece of data includes two lines: in the first line we write the name preceded by the character `>`, and in the second line we include the sequence:
 
 ```
 >Seq1
@@ -43,3 +43,63 @@ Recently, Illumina has created an improved version, FASTQ, which includes inform
 
 This is the format developed by Kumar, Tamura and Nei for their program MEGA. It is similar to FASTA, but using the symbol `#` instead of `>`. It must have a heading composed by the line `#Mega` at the beginning, and one or more of optional comments below it:
 
+```
+#Mega
+Title: this_is_a_test
+
+#168
+ACTGATCGATCGATCGATGCACGCG
+#169
+GACTGATCGATGCTAGCTGACGATC
+#171
+ACGTAGCATGCTAGCTGATCATGCT
+#176
+GACTGACTGACTACTGCTGATGCTA
+#199
+ACGTCAGATGATCGATGTAGCATCG
+```
+
+Unlike the FASTA format, the MEGA format requires that the sequences are aligned and have the same length.
+
+## NEXUS format
+
+This is the most commonly used file format due to its flexibility and standardization. In this case, the text file starts with the line “#NEXUS”, followed by a series of blocks.
+
+Each NEXUS block starts with the word begin followed by the name of the block, and ends with the word end. Each line ends with a semicolon (`;`). The definition of the blocks and all the possible commands are detailed in the original paper[^1], although some phylogenetic programs admit and can interpret their own blocks.
+
+The most basic block is the `data` block, designed to include the data matrix. It includes a series of lines that define the characteristics of the matrix (size, type of data, special symbols, etc), followed by a line that only includes the word matrix, and finally the matrix. The names of the sequences are separated from the data by a tabulator[^2]:
+
+```
+begin data;
+dimensions ntax=6 nchar=8;
+format datatype=dna missing=? gap=-;
+matrix
+Taxon1	AGCCGTTA
+Taxon2	AGTCGT??
+Taxon3	AGCCATTA
+Taxon4	GGGCGTTA
+Taxon5	AGCCG--A
+Taxon6	AGCCG--A
+;
+end;
+```
+
+Sometimes, this block is separated in two: the `taxa` and `characters` blocks. This happens, for example, in the files exported by Geneious. Personally, I dislike this separation, as I found it redundant, buy anyone can format the files as mostly pleases them.
+
+Another useful block is the `assumptions` block, which allow us to define partitions in our matrix. This is necessary if our matrix is formed by various concatenated fragments. Some programs will recognize this block, and will independently calculate the values of their parameters for each of the partitions, producing more reliable and correct results. Other programs will not read it, and we will have to introduce the partitions using different systems.
+
+```
+begin assumptions;
+charset fragment1 = 1-450;
+charset fragment2 = 451-893;
+charset fragment3 = 894-1432;
+end;
+```
+
+This block is also useful if we want the program to analyze separately the third codon in coding genes, the loops of ribosomal RNAs, introns, etc.
+
+Some programs (for example, MrBayes) define their own blocks, which include specific instructions that are exclusively interpreted by them.
+
+
+[^1]: Maddison, D.R., Swofford, D.L., Maddison, W.P. (1997). NEXUS: An extensible file format for systematic information. Systematic Biology 46(4):590-621.
+[^2]: Some programs, when they create NEXUS files, they use spaces or line breaks, which can cause problems when other more strict program reads the file.
