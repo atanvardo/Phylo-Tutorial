@@ -27,3 +27,18 @@ $$
 R = \frac{T_{former}}{T_{new}}
 $$
 
+Unfolding the Bayes equation to its full form:
+
+$$
+R = \frac{\frac{P(D|H_{new})P(H_{new})}{P(D)}}{\frac{P(D|H_{former})P(H_{former})}{P(D)}}
+$$
+
+
+
+\frac{P(D|H_{new})P(H_{new})}{P(D)}
+\frac{P(D|H_{former})P(H_{former})}{P(D)}
+
+
+
+
+
