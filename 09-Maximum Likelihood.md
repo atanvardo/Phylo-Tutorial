@@ -30,7 +30,7 @@ $$
 We go position by position, calculating the probability of that the original nucleotide has changed to the corresponding nucleotide in the final sequence. In the first position, the change is from C to C. The probability will be the frequency of C, multiplied by the probability of change from C to C. We calculate this for every position, multiply all the values, and as a result we get the likelihood value:
 
 $$
-L = (\pi_{C}P_{C\to C}
+L = (\pi_{C}P_{C\to C}) (\pi_{C}P_{C\to C}) (\pi_{A}P_{A\to G}) (\pi_{T}P_{T\to T})
 $$
 
 
