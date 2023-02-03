@@ -22,3 +22,8 @@ The meaning of the components of the Bayes equation for phylogenetic analyses is
 ## Bayesian Inference algorithm
 
 This method uses a **Markov chain Monte Carlo** algorithm. This procedure is equivalent to “have a walk” around a multidimensional space conformed by all the possible trees. It starts in a random place and looks which tree is at that position ( $T_{former}$ ). Then it takes a step, moving to a close place (by modifying a bit any of the parameters of the tree) and look at the tree that is there ( $T_{new}$ ). And then it calculates the ratio between the Bayesian probabilities of both trees:
+
+$$
+R = \frac{T_{former}}{T_{new}}
+$$
+
