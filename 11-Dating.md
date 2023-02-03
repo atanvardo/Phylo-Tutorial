@@ -4,7 +4,9 @@ There are several methods to **calibrate** a phylogenetic tree, so the length of
 
 ## Events: fossils and biogeography
 
-We can use fossils and biogeographic events to establish the ages of branches and nodes. Nevertheless, depending on the kind of event, we will use different methods to determine its minimum or maximum age:
+We can use fossils and biogeographic events to establish the ages of branches and nodes. Nevertheless, depending on the kind of event, we will use different methods to determine its minimum or maximum age.
+
+When we set these calibrations points in a phylogenetic software, for example BEAST, we must create a probabilistic distribition from which the program will get values for the ages of the clades, which will include parameters such as a mean, a standard deviation, maximum and minumum values, etc. In order to set these parameters, we must keep in mind how we can interpret these events and how we can infer the age of our clades from them: 
 
 | Method | Background | How to calculate |
 | ---- | ---- | ---- |
