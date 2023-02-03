@@ -83,10 +83,10 @@ Felsenstein, on other hand, proposed an alternative (**F81**) in which the nucle
 $$
 P_{i} = 
 \begin{bmatrix}
-  . & \pi_{C}\alpha & \pi_{G} * \alpha & \pi_{T} * \alpha \\
-  \pi_{A} * \alpha & . & \pi_{G} * \alpha & \pi_{T} * \alpha \\
-  \pi_{A} * \alpha & \pi_{C} * \alpha & . & \pi_{T} * \alpha \\
-  \pi_{A} * \alpha & \pi_{C} * \alpha & \pi_{G} * \alpha & . \\
+  . & \pi_{C}\alpha & \pi_{G}\alpha & \pi_{T}\alpha \\
+  \pi_{A}\alpha & . & \pi_{G}\alpha & \pi_{T}\alpha \\
+  \pi_{A}\alpha & \pi_{C}\alpha & . & \pi_{T}\alpha \\
+  \pi_{A}\alpha & \pi_{C}\alpha & \pi_{G}\alpha & . \\
 \end{bmatrix}
 $$
 
