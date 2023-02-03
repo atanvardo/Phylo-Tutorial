@@ -119,3 +119,11 @@ f =
   \pi_{A} & \pi_{C} & \pi_{G} & \pi_{T} \\
 \end{bmatrix}
 $$
+
+## Table of nucleotide substitution models
+
+The following table resume all the possible combinations of the traditional models with their abbreviations:
+
+| Number of substitution rates | Same nucleotide frequencies | Different nucleotide frequences |
+| ------ | ------ | ------ |
+| 1 | Jukes and Cantor (JC) | Felsenstein 81 (F81) |
