@@ -127,3 +127,9 @@ The following table resume all the possible combinations of the traditional mode
 | Number of substitution rates | Same nucleotide frequencies | Different nucleotide frequences |
 | ------ | ------ | ------ |
 | 1 | Jukes and Cantor (JC) | Felsenstein 81 (F81) |
+| 2 | Kimura-2-parameter (K2P, K80) | Hasegawa, Kishino and Yano (HKY85) |
+| 3 | Kimura-2-parameter (K3ST, K81) | Tamura-Nei (TrN) |
+| 4 | Transition model, equal frequences (TIMef) | Transition model (TIM) |
+| 5 | Transversion model, equal frequences (TVMef) | Transversion model (TVM) |
+| 6 | Symmetrical (SYM) | General Time Reversible (GTR, REV) |
+
