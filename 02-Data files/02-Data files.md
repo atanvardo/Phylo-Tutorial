@@ -26,3 +26,20 @@ Files in PHYLIP format usually have the extension phy.
 
 ## FASTA format
 
+This format was developed by Lipman and Pearson in 1985. It is a simple text format that stores a collection of sequences. It does not require that the sequences are aligned, have the same length, or even have any relationship between them, so it is used as a "storage". Each piece of data includes two lines: in the first line we write the name preceded by the character “>”, and in the second line we include the sequence:
+
+```
+>Seq1
+ATCGATCGGACGATCGATGCATCGACTG
+>Seq2
+AGCTAGCTACGATGCATTCGATCGATGCATCGATGC
+>Seq3
+ACGGACTCGTAGCAGCGACGGAGCATGCATCG
+```
+
+Recently, Illumina has created an improved version, FASTQ, which includes information about the sequence quality. It has not yet been implemented in phylogenetic programs (it has other uses), but may be used in the future.
+
+## MEGA format
+
+This is the format developed by Kumar, Tamura and Nei for their program MEGA. It is similar to FASTA, but using the symbol `#` instead of `>`. It must have a heading composed by the line `#Mega` at the beginning, and one or more of optional comments below it:
+
