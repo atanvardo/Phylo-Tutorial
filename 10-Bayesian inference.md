@@ -39,6 +39,9 @@ $$
 R = \frac{P(D|H_{new})P(H_{new})}{P(D|H_{former})P(H_{former})}
 $$
 
+Additionally, we said that the probability of each tree, $P(H)$, is (in theory) the same in all the cases. So we can also remove it, and then we find that…
 
-
+$$
+R = \frac{P(D|H_{new})}{P(D|H_{former})}
+$$
 
