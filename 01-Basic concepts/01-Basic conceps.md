@@ -1,4 +1,4 @@
-## Trees
+# Trees
 
 The basic element of phylogenetics is the **tree**, a graphical representation of the relationships between different organisms or taxa. It is composed by a series of **nodes** connected by **branches**.
 
@@ -18,4 +18,6 @@ In order to root a tree, we can use different methods:
 - **Outgroup**: This method is based on including at least one taxon that is external to our study group, and places the root between this taxon and our ingroup. It is recommended to include at least three outgroups that have a paraphyletic relationship with our ingroup.
 
 ![Outgroups](01-Outgroups.png)
+
+## Types of trees
 
