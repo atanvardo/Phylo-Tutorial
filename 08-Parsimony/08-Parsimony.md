@@ -38,7 +38,7 @@ Ideally, we could create all the possible trees, calculate the total length of e
 But this is not feasible. The total number of possible (rooted) trees for a T number of taxa is given by this formula:
 
 $$
-N = (2T-3) \prod\limits_(i=3)^T (2i-5)
+N = (2T-3) \prod\limits_{i=3}^T (2i-5)
 $$
 
 
