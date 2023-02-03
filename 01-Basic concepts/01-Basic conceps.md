@@ -4,6 +4,8 @@ The basic element of phylogenetics is the **tree**, a graphical representation o
 
 The nodes can be **terminal** (corresponding to the taxa that we are studying) or **internal**. There are **three** branches splitting from each node, each of them can lead to a terminal node or an internal node.
 
+## Rooting
+
 Trees can be **rooted** or **unrooted**. An unrooted tree just shows the relationships between the taxa and the distance between them, but it can’t determine which ones are in more **basal** or derived positions.
 
 ![Trees](01-Tree_rooted_vs_unrooted.png)
@@ -20,4 +22,28 @@ In order to root a tree, we can use different methods:
 ![Outgroups](01-Outgroups.png)
 
 ## Types of trees
+
+According to their characteristics, we can have different types of phylogenetic trees:
+
+-	**Dendrogram**: This term denotes any tree, in general. It refers to the mathematical construct that represents the relationship between diverse elements.
+-	**Cladogram**: It is a tree that only shows the relationships between the organisms, or their ramification pattern. It is obtained using cladistic methods, such as Maximum Parsimony.
+-	**Phylogram**: Tree that shows information about the number of nucleotide substitutions (genetic distance) that separates each lineage, usually codified as the length of the branches.
+-	**Chronogram**: Tree in which the length of the branches is proportional to the time elapsed between two divergence events.
+-	**Ultrametric tree**: Tree in which the terminal nodes are vertically aligned. Chronograms are usually ultrametric (all the terminal nodes correspond to organisms living in the current time), except those dealing with virus or bacterial samples taken along a temporal series.
+
+## Clades, monophyly, etc
+
+We can find different kinds of clades, or groups of organisms:
+
+- **Monophyletic**: These clades include all the organisms that descend from a common ancestor. It is the only type of clade that is considered valid. For example: mammals, angiosperms…
+- **Paraphyletic**: It includes organisms that descend from a common ancestor, but not all of them. Technically it is incorrect to consider them as valid groups, but some paraphyletic groups are recognized by tradition (for example, reptiles).
+- **Polyphyletic**: These clades include differnt orgasnims that are not related between them. For example: flying vertebrates.
+
+Two clades are sister clades if the descent from a common ancestor, forming a monophyletic clade together. We can distinguish them on trees as the two descendants from an internal node. For example: humans and chimpanzees, in the tree above.
+
+Usually, nodes bifurcate in two clades (**dichotomy**) [^1]. Sometimes, we can find three (**tritomy**) or more (**polytomy**) clades originating from a single node. This is an artefact that generates when the algorithm used to reconstruct the tree could not decide which is the relationship between these clades. Maybe our sequences are too few, or their quality is not optimal, or they are identical. They can also be generated when we generate consensus trees. Polytomies are normal and can be published, unless they are very exaggerated .
+
+
+
+[^1]: Warning! Each internal node has THREE branches: two connecting to their “children” clades, and one that connects it to the rest of the tree. Never forget this last branch, which is usually overseen if we are working with rooted trees.
 
