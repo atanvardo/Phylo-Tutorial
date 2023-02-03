@@ -16,7 +16,7 @@ When we set these calibrations points in a phylogenetic software, for example BE
 
 ## Molecular clock
 
-If we do not know any fossil or biogeographic event, we can use the **substitution rate** of the genetic fragment that we are using (its value is usually given in substitutions per site per million years) to calculate the age of each node. This method should be used with care, and we must check if the obtained ages make sense or not.
+If we do not know any fossil or biogeographic event, we can use the **substitution rate** of the genetic fragment that we are using (its value is usually given in substitutions per site per million years) to calculate the age of each node. If we don't know the value of this rate for our organisms, we can use rates calculated for related taxonomic groups, but keep in mind that this method should be used with care, and we must check if the obtained ages make sense or not.
 
 There are two different types of molecular clocks:
 
