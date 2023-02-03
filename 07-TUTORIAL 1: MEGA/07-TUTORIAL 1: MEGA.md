@@ -4,6 +4,4 @@ The MEGA software has a set of tools that allow us to carry out phylogenetic ana
 
 It has a relatively friendly interface, although it may be a bit confusing when importing data from other sources. Additionally, it has its own data format, which we described above.
 
-Mega
-: Dofwatere
-
+==To be done==
