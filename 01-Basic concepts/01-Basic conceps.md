@@ -17,5 +17,7 @@ In order to root a tree, we can use different methods:
 - **Mid-point rooting**: It takes the two most distant taxa, and places the root in the mid-point between them. This premise is very weak, so using this method is not advisable.
 - **Outgroup**: This method is based on including at least one taxon that is external to our study group, and places the root between this taxon and our ingroup. It is recommended to include at least three outgroups that have a paraphyletic relationship with our ingroup.
 
+<p align="center">
 ![Outgroups](01-Outgroups.svg)
+</p>
 
