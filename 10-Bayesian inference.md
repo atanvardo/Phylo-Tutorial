@@ -33,11 +33,11 @@ $$
 R = \frac{\frac{P(D|H_{new})P(H_{new})}{P(D)}}{\frac{P(D|H_{former})P(H_{former})}{P(D)}}
 $$
 
+And now we can do the trick! The element that can't be calculated, P(D), is present in both the numerator and the denominator, so we can simply remove it:
 
-
-\frac{P(D|H_{new})P(H_{new})}{P(D)}
-\frac{P(D|H_{former})P(H_{former})}{P(D)}
-
+$$
+R = \frac{P(D|H_{new})P(H_{new})}{P(D|H_{former})P(H_{former})}
+$$
 
 
 
