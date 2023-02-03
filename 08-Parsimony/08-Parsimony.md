@@ -35,13 +35,21 @@ We repeat the same process for each of the positions of our matrix, and at the e
 
 Ideally, we could create all the possible trees, calculate the total length of each one, and choose the shortest tree.
 
-But this is not feasible. The total number of possible (rooted) trees for a T number of taxa is given by this formula:
+But this is not feasible. The total number of possible trees (rooted) for a T number of taxa is given by this formula:
 
 $$
 N = (2T-3) \prod\limits_{i=3}^T (2i-5)
 $$
 
+This means that we have 105 possible trees for 5 taxa, more than 34 million trees for 10 taxa, and if we have more than 50 taxa the total number of possible trees is higher than the number of atoms in the entire Universe.
 
+As it is not possible to build a computer bigger than the Universe, we must use different algorithms to be able to carry out a parsimony analysis:
 
+- **Exhaustive search**: We build all the trees, iteratively. We start with three taxa, chosen randomly. Then, in each step, we add one more taxon to the tree, in every possible position, and continue this process recursively (Figure 5). This method ensures that we will find the shortest tree, but it is only feasible for very small datasets (maximum 10 taxa).
+- **Branch and bound**: Identical to the exhaustive search, but including a length threshold. Every time that we add a taxon, we calculate the length of the trees, discarding those whose length is higher than the threshold. This greatly reduces the number of trees, and still ensures that we will find the shortest tree, but it is still unfeasible for large datasets.
+- **Heuristic search**: There are different approaches for this algorithm.
+  - **Stepwise addition** is identical to branch and bound, but it only keeps the shortest tree in each iteration.
+  - **Star decomposition** is more complex, because in each step it collapses the tree and performs a series of complex operations as it “unfolds” the tree. At the same time, it rearranges the tree in each step and calculates the new length, sometimes finding shorter trees that it may have overlooked in previous steps.
+  * There are different rearrangement (or **branch-swapping**) algorithms; the most common is tree bisection and reconnection (**TBR**). This is the fastest tree search algorithm, but it does not guarantee finding the shortest tree, even using branch-swapping methods.
 
 [^1]: As Ian Malcolm (Jeff Golfblum) said in Jurassic Park, “life finds a way”.
