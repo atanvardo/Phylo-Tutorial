@@ -43,6 +43,7 @@ $$P_{i} =
   \alpha & \alpha & \alpha & . \\
 \end{bmatrix}
 $$
+
 $$
 f = 
 \begin{bmatrix}
