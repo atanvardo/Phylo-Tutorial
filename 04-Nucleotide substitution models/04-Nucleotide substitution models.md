@@ -133,3 +133,10 @@ The following table resume all the possible combinations of the traditional mode
 | 5 | Transversion model, equal frequences (TVMef) | Transversion model (TVM) |
 | 6 | Symmetrical (SYM) | General Time Reversible (GTR, REV) |
 
+## Spicing up the model
+
+Models can include additional parameters to describe the rates of change from one nucleotide to another.
+
+The parameter called **invariants** (I) adds information about if some nucleotides in our matrix are always invariable, i.e. they never change.
+
+The parameter called **gamma** (G o Г) adds information about the shape of the distribution that determines how the variable nucleotides change. This shape is always a gamma probabilistic distribution, which is defined by a parameter (α in phylogenies) which determines its general shape and steepness. For example, with α=1 we have many invariable positions and a few positions that change frequently; with α=2 there is a lot of heterogeneity, with α=9 most positions change frequently...
