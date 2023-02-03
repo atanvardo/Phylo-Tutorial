@@ -8,7 +8,7 @@ We must be aware that the likelihood is not the probability of that our tree wil
 
 ## Likelihood calculation
 
-Let’s see it with an example. Let’s suppose that we want to calculate the likelihood of that the sequence CCAT mutates to the sequence CCGT. The parameters of our model are:
+Let’s see it with an example. Let’s suppose that we want to calculate the likelihood of that the sequence `CCAT` mutates to the sequence `CCGT`. The parameters of our model are:
 
 $$
 P_{i} = 
@@ -28,4 +28,10 @@ f =
 $$
 
 We go position by position, calculating the probability of that the original nucleotide has changed to the corresponding nucleotide in the final sequence. In the first position, the change is from C to C. The probability will be the frequency of C, multiplied by the probability of change from C to C. We calculate this for every position, multiply all the values, and as a result we get the likelihood value:
+
+$$
+L = (\pi_{C}P_{C\to C}
+$$
+
+
 
