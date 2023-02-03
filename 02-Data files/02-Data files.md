@@ -100,6 +100,33 @@ This block is also useful if we want the program to analyze separately the third
 
 Some programs (for example, MrBayes) define their own blocks, which include specific instructions that are exclusively interpreted by them.
 
+## NEWICK format
+
+This format is used to store the phylogenetic trees. The name comes from a seafood restaurant called Newick, in Dover (New Hampshire), in which James Archie, William H. E. Day, Joseph Felsenstein, Wayne Maddison, Christopher Meacham, F. James Rohlf and David Swofford shared a casual dinner while discussing this issue.
+
+This format represents each node using parentheses, including inside them the “children” nodes separated by commas. At the end there is a mandatory semicolon.
+
+For example, a simple tree composed only by two taxa, A and B, will be written as:
+
+```
+(A,B);
+```
+
+The parentheses are nested in the same way as the clades in the tree. For example, in the following case, A is a sister taxon of B, and both of them form a clade which is sister to the taxon C. The groups formed by A, B and C is a sister clade of the clade formed by D and E:
+
+```
+(((A,B),C),(D,E));
+```
+
+Additionally, we can include information such as the branch lengths, adding the value after a colon written at the end of each node:
+
+```
+(((A:0.01,B:0.02):0.11,C:0.13):0.23,(D:0.09,E:0.07):0.45);
+```
+
+Some programs add more information within brackets, which can cause problems when we import the file into another program. For example, BEAST stores in this way data about the confidence intervals for the node heights, the evolutionary rate of each fragment at each node, and many other parameters.
+
+
 
 [^1]: Maddison, D.R., Swofford, D.L., Maddison, W.P. (1997). NEXUS: An extensible file format for systematic information. Systematic Biology 46(4):590-621.
 [^2]: Some programs, when they create NEXUS files, they use spaces or line breaks, which can cause problems when other more strict program reads the file.
