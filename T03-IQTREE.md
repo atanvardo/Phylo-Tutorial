@@ -19,7 +19,9 @@ One easy way to run the command line directly in that folder in Windows is going
 
 In the command line window, we will have to write the name of the program (`iqtree.exe` or `iqtree2.exe`, depending on the version that we downloaded), and then the list of all the parameters that we want to use. For example:
 
-> iqtree2.exe -s .\GU_NG.nex -p .\GU_NG.partitions.txt -m GTR+I+G -bb 10000
+```
+iqtree2.exe -s .\GU_NG.nex -p .\GU_NG.partitions.txt -m GTR+I+G -bb 10000
+```
 
 In this example, we are:
 
