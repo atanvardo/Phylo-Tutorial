@@ -22,8 +22,8 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 
 These tutorials include simple examples of several phylogenetic methods. For more complex analyses, read the manuals of the software used in each tutorial.
 
-- [Tutorial 1: MEGA. Genetic distances and Neighbor-Joining](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T01-MEGA.md) **(To be done)**
-- [Tutorial 2: Model testing with jModelTest](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T02-jModeltest.md) **(To be done)**
+- [Tutorial 1: MEGA. Genetic distances and Neighbor-Joining](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T01-MEGA.md)
+- [Tutorial 2: Model testing with jModelTest](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T02-jModeltest.md)
 - [Tutorial 3: Maximum Likelihood with IQTREE](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T03-IQTREE.md) **(To be done)**
 - [Tutorial 4: Bayesian Inference with MrBayes](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T04-MrBayes.md) **(To be done)**
 - [Tutorial 5: Dating with molecular clock in BEAST](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T05-BEAST.md) **(To be done)**

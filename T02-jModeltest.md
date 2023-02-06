@@ -51,6 +51,6 @@ In order to see how each model compares to the others, we should scroll upwards 
 
 This table sort the models, starting from the most fitting to the less appropriate. In this case, the best model is GTR+I+G.
 
-In order to correctly interpret the results and translate them to our phylogenetic software, we must keep in mind the **![table of nucleotide substitution models](./04-Nucleotide substitution models.md#table-of-nucleotide-substitution-models)**.
+In order to correctly interpret the results and translate them to our phylogenetic software, we must keep in mind the **![table of nucleotide substitution models](https://github.com/atanvardo/Phylo-Tutorial/blob/main/04-Nucleotide%20substitution%20models.md#table-of-nucleotide-substitution-models)**.
 
 **Warning**: Not every program uses the same nomenclature for the nucleotide substitution models, but if we know how many rates of substitution we should include and what are the extra parameters, we can know how to read the jModelTest table and translate it to any program. For example, looking at the table, we can see that the model `F81` is equivalent to the model `JC` including different nucleotide frequencies, so if some program calls a model `F81` and another program says `JC+F`, they are the same model.
