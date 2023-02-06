@@ -18,6 +18,8 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 - [Lesson 10: Bayesian Inference](https://github.com/atanvardo/Phylo-Tutorial/blob/main/10-Bayesian%20inference.md)
 - [Lesson 11: Dating](https://github.com/atanvardo/Phylo-Tutorial/blob/main/11-Dating.md)
 
+[Tricks and cheats](https://github.com/atanvardo/Phylo-Tutorial/blob/main/Tricks%20and%20cheats.md)
+
 ## Practical tutorials
 
 These tutorials include simple examples of several phylogenetic methods. For more complex analyses, read the manuals of the software used in each tutorial.
