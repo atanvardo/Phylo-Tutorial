@@ -155,7 +155,7 @@ What is the meaning of this graph?
 
 If we plot the probability/likelihood values (L) of the trees sampled in each generation, we should see something similar to this picture:
 
-![Graph](media/Tmb-01-graph.png | width=100)
+![Graph](media/Tmb-01-graph.png){width="100px"} 
 
 First, it grows fast, and then it reaches a stationary phase. During the first generations, in which the probability is still growing, the sampled trees are still far from the optimal tree. Thus, we should remove this phase before processing our results to get our definitive tree; this is called **burn in**.
 
