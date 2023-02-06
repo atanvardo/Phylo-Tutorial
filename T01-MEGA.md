@@ -93,7 +93,7 @@ In the `File` menu there is an option to save our tree in Newick format, and in 
 
 Something very important to consider when saving our tree is which image we should use. There are two kinds of files:
 
-- **Raw tree** files (Newick, NEXUS...): These files store the topology of the tree and all the information attached in a raw format (see the [lesson](../02-Data files.md) about data files). They can be opened in a file explores program (FigTree, TreeView, Dendroscope...), where we can modify the general appearance before exporting them as images.
+- **Raw tree** files (Newick, NEXUS...): These files store the topology of the tree and all the information attached in a raw format (see the [lesson](./02-Data files.md) about data files). They can be opened in a file explores program (FigTree, TreeView, Dendroscope...), where we can modify the general appearance before exporting them as images.
 - Image files:
 	- **Raster** (jpg, tiff, png, bmp...): These images are formed by pixels, which can be seen if we zoom in. It is not advisable to store phylogenetic trees in these formats, as it makes very difficult or impossible to edit the file. Additionally, their resolution is limited.
 	- **Vector** (svg, emf…): The image is stored as a series of lines and shapes. Their resolution is infinite. The trees stored in these files can be edited in programs like Inkscape, CorelDraw or Adobe Illustrator to improve how it looks, highlight some branches or nodes, or add more information. Be aware that, when editing a tree in a graphic software, you should NEVER change the relative lenghts of the branches. When we are done editing the image, we can save it as a raster file (preferably png) that we can include in our manuscript.
