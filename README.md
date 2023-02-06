@@ -25,7 +25,7 @@ These tutorials include simple examples of several phylogenetic methods. For mor
 - [Tutorial 1: MEGA. Genetic distances and Neighbor-Joining](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T01-MEGA.md)
 - [Tutorial 2: Model testing with jModelTest](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T02-jModeltest.md)
 - [Tutorial 3: Maximum Likelihood with IQTREE](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T03-IQTREE.md)
-- [Tutorial 4: Bayesian Inference with MrBayes](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T04-MrBayes.md) **(To be done)**
+- [Tutorial 4: Bayesian Inference with MrBayes](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T04-MrBayes.md)
 - [Tutorial 5: Dating with molecular clock in BEAST](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T05-BEAST.md) **(To be done)**
 - [Tutorial 6: Model comparison with Bayes Factors](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T06-Bayes%20factors.md) **(To be done)**
 
