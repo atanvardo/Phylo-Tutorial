@@ -39,7 +39,7 @@ It will show the composition of our matrix in the `Partitions` tab.
 
 In this table we have a row for each partition (if our data is unpartitioned, it will show only one).
 
-If we have a look at the right side of the table, we can see that, by default, all of the partitions share the same nucleotide substitution model (site model), the same clock (clock model) and the same tree. It is advisable to tell BEAST to use different nucleotide substitution models and clocks for each partition. In order to do this, we select all the partitions (`Ctrl` + `A`), and then we click on the `Unlink Subst. Models` and `Unlink clock models` in the toolbar just above the table. If everything is correct, we will see now a different name for the site models and clock models in each row.
+If we have a look at the right side of the table, we can see that, by default, all of the partitions share the same nucleotide substitution model (site model), the same clock (clock model) and the same tree. It is advisable to tell BEAST to use different nucleotide substitution models and clocks for each partition. In order to do this, we select all the partitions (`Ctrl` + `A`), and then we click on the `Unlink Subst. Models` and `Unlink Clock Models` in the toolbar just above the table. If everything is correct, we will see now a different name for the site models and clock models in each row.
 
 ### The next tabs
 
@@ -58,7 +58,7 @@ Other tabs that we do not usually check are:
 
 In the `Sites` tab we define the nucleotide substitution models for our different partitions. We should have calculated the most appropiate model for each of them in jModelTest or a similar program beforehand.
 
-As usual, be aware of the different terminology that each program uses for the models, and check the [table](https://github.com/atanvardo/Phylo-Tutorial/blob/main/04-Nucleotide%20substitution%20models.md#table-of-nucleotide-substitution-models). For example, all the models in BEAST will include different nucleotide frequencies by default (it is shown as the `Estimated` option on the `Base frequencies` menu), so if we choose the Jukes and Cantor model (`JC`) we will be actually choosing the Felsenstein 81 model (`F81`)!
+As usual, be aware of the different terminology that each program uses for the models, and check the [table](https://github.com/atanvardo/Phylo-Tutorial/blob/main/04-Nucleotide%20substitution%20models.md#table-of-nucleotide-substitution-models). For example, all the models in BEAST will include different nucleotide frequencies by default (it is shown as the `Estimated` option on the `Base frequencies` menu), so if we choose the Jukes and Cantor model (**JC**) we will be actually choosing the Felsenstein 81 model (**F81**)!
 
 In the `Site heterogeneity Model` menu we can choose to include the proportion of invariant sites and/or the gamma distribution to our model.
 
@@ -144,9 +144,9 @@ When we open TRACER, it will show a window divided in several panels. Under the 
 
 In the table of the parameter values, it will show the mean value of each parameter during the analysis, and a column with the effective sample size (ESS). This value is very important. We must check the color of the number shown in this field:
 
-- **<span style="color: black">Black </span>**: This means that the parameter was estimated correctly.
-- **<span style="color: orange">Orange </span>**: This means that there might be some inaccuracy in the calculation of the values for that parameter, but you should not worry.
-- **<span style="color: red">Red </span>**: This means that the values calculated for the parameter do not correspond to reality and we should check what happened. It we look at the graph on the right panel, which shows the distribution of the values that BEAST used for this parameter throughout the analysis, we can see what is the problem. Sometimes, the distribution of the parameter values is 'pushed' towards one of the sides of the graph, which means that the real value may be outside the limits that we set for this prior in BEAUti. Alternatively, we may see that there are double peaks, which are more worrisome and difficult to address. Or any other kind of artifact. We must closely examine each casi in particular and think about what may be causing problems with that parameter.
+- **<span style="color:black">Black</span>**: This means that the parameter was estimated correctly.
+- **<span style="color:orange">Orange</span>**: This means that there might be some inaccuracy in the calculation of the values for that parameter, but you should not worry.
+- **<span style="color:red">Red</span>**: This means that the values calculated for the parameter do not correspond to reality and we should check what happened. It we look at the graph on the right panel, which shows the distribution of the values that BEAST used for this parameter throughout the analysis, we can see what is the problem. Sometimes, the distribution of the parameter values is 'pushed' towards one of the sides of the graph, which means that the real value may be outside the limits that we set for this prior in BEAUti. Alternatively, we may see that there are double peaks, which are more worrisome and difficult to address. Or any other kind of artifact. We must closely examine each casi in particular and think about what may be causing problems with that parameter.
 
 Anyway, if there are only a few parameters in orange/red values, it should not be a major problem.
 
