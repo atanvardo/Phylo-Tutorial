@@ -144,9 +144,9 @@ When we open TRACER, it will show a window divided in several panels. Under the 
 
 In the table of the parameter values, it will show the mean value of each parameter during the analysis, and a column with the effective sample size (ESS). This value is very important. We must check the color of the number shown in this field:
 
-- <span style="color:black">Black</span>: This means that the parameter was estimated correctly.
-- <span style="color:orange">Orange</span>: This means that there might be some inaccuracy in the calculation of the values for that parameter, but you should not worry.
-- <span style="color:red">Red</span>: This means that the values calculated for the parameter do not correspond to reality and we should check what happened. It we look at the graph on the right panel, which shows the distribution of the values that BEAST used for this parameter throughout the analysis, we can see what is the problem. Sometimes, the distribution of the parameter values is 'pushed' towards one of the sides of the graph, which means that the real value may be outside the limits that we set for this prior in BEAUti. Alternatively, we may see that there are double peaks, which are more worrisome and difficult to address. Or any other kind of artifact. We must closely examine each casi in particular and think about what may be causing problems with that parameter.
+- **Black**: This means that the parameter was estimated correctly.
+- **Yellow**: This means that there might be some inaccuracy in the calculation of the values for that parameter, but you should not worry.
+- **Red**: This means that the values calculated for the parameter do not correspond to reality and we should check what happened. It we look at the graph on the right panel, which shows the distribution of the values that BEAST used for this parameter throughout the analysis, we can see what is the problem. Sometimes, the distribution of the parameter values is 'pushed' towards one of the sides of the graph, which means that the real value may be outside the limits that we set for this prior in BEAUti. Alternatively, we may see that there are double peaks, which are more worrisome and difficult to address. Or any other kind of artifact. We must closely examine each casi in particular and think about what may be causing problems with that parameter.
 
 Anyway, if there are only a few parameters in orange/red values, it should not be a major problem.
 
