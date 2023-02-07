@@ -30,3 +30,6 @@ These tutorials include simple examples of several phylogenetic methods. For mor
 - [Tutorial 4: Bayesian Inference with MrBayes](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T04-MrBayes.md)
 - [Tutorial 5: Dating with molecular clock in BEAST](https://github.com/atanvardo/Phylo-Tutorial/blob/main/T05-BEAST.md)
 
+---
+
+[2023 Alejandro López López](https://github.com/atanvardo/Phylo-Tutorial/blob/main/LICENSE)
