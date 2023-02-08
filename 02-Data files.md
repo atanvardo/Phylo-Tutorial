@@ -63,7 +63,7 @@ Unlike the FASTA format, the MEGA format requires that the sequences are aligned
 
 ## NEXUS format
 
-This is the most commonly used file format due to its flexibility and standardization. In this case, the text file starts with the line “#NEXUS”, followed by a series of blocks.
+This is the most commonly used file format due to its flexibility and standardization. In this case, the text file starts with the line `#NEXUS`, followed by a series of blocks.
 
 Each NEXUS block starts with the word `begin` followed by the name of the block, and ends with the word `end`. Each line ends with a semicolon (`;`). The definition of the blocks and all the possible commands are detailed in the original paper[^1], although some phylogenetic programs admit and can interpret their own blocks.
 
