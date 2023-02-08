@@ -54,6 +54,6 @@ We can also separate the codons of a coding fragment:
 
 ```
 DNA, COIcodonpos1 = 1-792\3
-DNA, COIcodonpos2 = 1-793\3
-DNA, COIcodonpos3 = 1-794\3
+DNA, COIcodonpos2 = 2-792\3
+DNA, COIcodonpos3 = 3-792\3
 ```
