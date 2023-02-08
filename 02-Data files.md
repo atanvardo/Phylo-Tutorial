@@ -130,6 +130,11 @@ Some programs add more information within brackets, which can cause problems whe
 
 Trees can also be stored in NEXUS format (see above). In this case, the NEXUS format will include a `trees` block, in which one or several trees will be stored in NEWICK format.
 
+```
+begin trees;
+tree NAMEOFTHETREE = (((A:0.01,B:0.02):0.11,C:0.13):0.23,(D:0.09,E:0.07):0.45);
+end;
+```
 
 [^1]: Maddison, D.R., Swofford, D.L., Maddison, W.P. (1997). NEXUS: An extensible file format for systematic information. Systematic Biology 46(4):590-621.
 [^2]: Some programs, when they create NEXUS files, they use spaces or line breaks, which can cause problems when other more strict program reads the file.
